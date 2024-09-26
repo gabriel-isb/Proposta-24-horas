@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronômetro de Proposta</title>
+     <!-- Inclui o Boxicons CDN -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
 
         body {
@@ -61,6 +63,13 @@
             transform: scale(1.05);
         }
 
+        /* Estilo do ícone do WhatsApp */
+        .whatsapp-link i {
+            margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+            font-size: 38px; /* Tamanho do ícone */
+            vertical-align: middle;
+        }
+
         .logo-container {
             display: flex;
             justify-content: center;
@@ -93,11 +102,13 @@
     <div class="logo-container">
         <img src="img/logo.png" alt="Logo" class="logo">
     </div>
-    <h1>Proposta válida por apenas 24 Horas!!</h1>
+    <h1>Proposta válida por apenas 48 Horas!!</h1>
     <div id="countdown"></div>
     <div id="contact">
         <p>Para aceitar a proposta, entre em contato via WhatsApp pelo botão abaixo:</p>
-        <a href="https://wa.me/5527996107474?text=Olá,%20quero%20aceitar%20a%20proposta!" class="whatsapp-link" target="_blank">Aceitar Proposta</a>
+        <a href="https://wa.me/5527996107474?text=Olá,%20quero%20aceitar%20a%20proposta!" class="whatsapp-link" target="_blank">
+            <i class='bx bxl-whatsapp'></i> Aceitar Proposta
+        </a>
     </div>
     <script>
         const proposalDuration = 24 * 60 * 60 * 1000; // 24 horas em milissegundos
